@@ -2,3 +2,10 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+$('#press').click(function () {
+    var url = '';
+    var textValue = $('#textbox').val();
+
+    window.location.href = url + '?name=' + textValue;
+});

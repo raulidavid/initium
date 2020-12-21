@@ -2,7 +2,50 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row" style="margin-left:127px">
+    <div class="form-group ml-5">
+        <label>ID</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>NOMBRE</label>
+        <input class="form-control" id="textbox" type="text" />
+    </div>
+    <div>
+        <button style="margin-top:32px" class="save btn btn-primary" id="press" type="button">Guardar</button>
+    </div>
 </div>
+
+<div class="row">
+    <div class="col-2">
+        <h1> COLA 1</h1>
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="col-1 p-0">
+            <div class="panel panel-blue">@item</div>
+        </div>
+    }
+</div>
+<div class="row">
+    <div class="col-2">
+        <h1> COLA 2</h1>
+    </div>
+    <div class="col-1 p-0">
+        <div class="panel panel-pink">1</div>
+    </div>
+    <div class="col-1 p-0">
+        <div class="panel panel-pink">2</div>
+    </div>
+    <div class="col-1 p-0">
+        <div class="panel panel-pink">3</div>
+    </div>
+    <div class="col-1 p-0">
+        <div class="panel panel-pink">4</div>
+    </div>
+    <div class="col-1 p-0">
+        <div class="panel panel-pink">5</div>
+    </div>
+</div>
+
